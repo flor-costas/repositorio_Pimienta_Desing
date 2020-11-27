@@ -13,8 +13,8 @@ main {
   height: 100px;
   position: fixed; }
   #barraSuperior .logoFlex {
-    width: 190px;
-    height: 190px;
+    width: 50px;
+    height: 50px;
     margin-top: 15px; }
 
 #menu {
@@ -30,7 +30,7 @@ li a {
   color: #202020; }
 
 li a:hover {
-  color: #d3167e; }
+  color: #d3167e !important; }
 
 @media screen and (min-width: 780px) and (max-width: 1000px) {
   .navbar-toggler-icon {
