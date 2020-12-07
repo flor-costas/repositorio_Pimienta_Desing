@@ -26,6 +26,7 @@ main {
   width: 100% !important;
   height: 100px; 
   position: fixed;
+  margin: 0 !important;
   
   
   .logoFlex {
@@ -64,7 +65,6 @@ main {
     width: 95px;
     height: 80px;
     margin-top: 5px;
-    margin-bottom: 30px;
   }
 
 }
@@ -77,7 +77,6 @@ main {
     width: 95px;
     height: 80px;
     margin-top: 5px;
-    margin-bottom: 30px;
   }
 }
 
@@ -117,11 +116,53 @@ main {
   }
 }
 
-@media screen and (min-width: 780px) and (max-width: 1000px){
+@media screen and (min-width: 620px) and (max-width: 1000px){
   #textoPrincipal {
     margin-left: 5px;
   }
 
+}
+
+@media screen and (min-width: 310px) and (max-width: 476px){
+  #nosotros {
+    height: 500px;
+    width: 100%;
+  }
+
+  .portadaFlex {
+    width: 200px; 
+    height: 130px;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 6px 1px $color_complementario;
+    -moz-box-shadow: 0px 0px 6px 1px $color_complementario;
+    box-shadow: 0px 0px 6px 1px $color_complementario;
+    margin-top: 150px;
+    margin-left: 45px;
+  }
+
+  #textoPrincipal {
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: $color_secundario;
+    font-size: 16px; 
+    text-align: center;
+    margin: 0;
+  
+    strong {
+    font-family: 'Quicksand', Georgia, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    }
+  
+    .descripcion {
+    text-align: center;
+    font-size: 16px;
+    color: $color_texto;
+    margin: 0;
+    }
+  }
 }
 
 
@@ -218,7 +259,7 @@ main {
   }
 
   .verPacks {
-    margin-left: 240%;
+    margin-left: 240%; 
   }
 }
 
@@ -233,11 +274,35 @@ main {
 
 @media screen and (min-width: 476px) and (max-width: 780px){
   #servicios {
-    height: 950px; 
+    height: 1000px; 
   }
   .verPacks {
     margin-left: 90%;
   }
+
+}
+
+  @media screen and (min-width: 310px) and (max-width: 476px){
+  #servicios {
+    height: 80em; 
+  } 
+  .verPacks {
+    margin-left: 50px;
+    width: 50px;
+    height: 10px;
+  }
+  #cajaDG, #cajaF, #cajaV, #cajaSM {
+    font-family: 'Quicksand', Ropa Sans, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+       p{
+        font-size: 10px;
+        text-align: center;
+       }
+  
 }
 
 
@@ -261,7 +326,7 @@ main {
     .imgCuadricula{
       width: 300px;
       height: 300px;
-      margin: 15px 15px 15px 15px;
+      margin: 16px 16px 16px 16px;
       border-radius: 10px;
       -webkit-box-shadow: 4px 4px 8px 2px $color_complementario;
       -moz-box-shadow: 4px 4px 8px 2px $color_complementario;
@@ -274,7 +339,7 @@ main {
       box-shadow: -1px 1px 22px -1px rgb(116, 116, 116);
        
     }
-   
+  }   
     
     
     #carouselExampleControls{
@@ -290,7 +355,7 @@ main {
       width: 500px;
       height: 500px;
     }
-  }
+  
 
   @media screen and (min-width: 1000px) and (max-width: 1400px){
     #carouselExampleControls {
@@ -300,7 +365,7 @@ main {
   
   @media screen and (min-width: 780px) and (max-width: 1000px){
     #carouselExampleControls {
-      height: 100px; 
+      height: 450px; 
     }
 
     .imgCarrousel{
@@ -322,17 +387,129 @@ main {
     }
   }
   
+  @media screen and (min-width: 310px) and (max-width: 476px){
+    #carouselExampleControls {
+      height: 400px; 
+    }
+    
+    .imgCarrousel{
+      border-radius: 10px;
+      width: 270px;
+      height: 270px;
+      margin-left: 30px;
+    }
+  }
+
+  #packs {
+    font-family: 'Quicksand', Ropa Sans, sans-serif;
+    font-size: 18px;
+    background-color: #F3F3F3;  
+}
+
+#conteinerPacks {
+    background-color:#f7cbe1;
+    width: 100%;
+    height: 200px;
+}
+
+#conteinerPacks img {
+    width: 180px;
+    height: 170px;
+    margin-top: 25px;
+    margin-left: 45%;
+    align-items: center;
+}
+  
+#packPadre {
+  height: 500px;
+}
+
+.packSPM {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-top: 60px;
+    transition-duration: 1s;
+}
+
+
+.packSPM:hover{
+    transform: scale(1.15, 1.15);
+    -webkit-box-shadow: -1px 1px 22px -1px rgb(116, 116, 116);
+    -moz-box-shadow: -1px 1px 22px -1px rgb(116, 116, 116);
+    box-shadow: -1px 1px 22px -1px rgb(116, 116, 116);
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+  #packPadre {
+    height: 500px;  
+  }
+
+}
+
+@media screen and (min-width: 780px) and (max-width: 1000px){
+  #packPadre {
+    height: 1100px; 
+  }
+
+  #conteinerPacks img {
+    width: 150px;
+    height: 140px;
+    margin-top: 25px;
+    margin-left: 29%;
+    align-items: center;
+  }
+
+}
+
+@media screen and (min-width: 476px) and (max-width: 780px){
+  #packPadre {
+    height: 1100px; 
+  }
+
+  #conteinerPacks img {
+    width: 150px;
+    height: 140px;
+    margin-top: 25px;
+    margin-left: 25%;
+    align-items: center;
+  }
+
+}
+
+@media screen and (min-width: 310px) and (max-width: 476px){
+  #packPadre {
+    height: 60em; 
+  }
+
+  #conteinerPacks img {
+    margin-left: 25%;
+  }
+
+  .packSPM {
+    width: 270px;
+    height: 270px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 60px;
+    transition-duration: 1s;
+  }
+}
+
   #contacto {
     background-color: #F3F3F3;
     height: 40em; 
     margin-top: 15px;
+}
 
+#porMail{
+  font-size: 18px;
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1400px){
   #contacto {
-    height: 40em; 
-    
+    height: 40em;    
   }
 }
 
@@ -341,28 +518,44 @@ main {
     height: 950px; 
   }
 
+  #porMail p{
+    font-size: 18px;
+  }
+
 }
 
 @media screen and (min-width: 476px) and (max-width: 780px){
   #contacto {
     height: 950px; 
   }
-  
+
+}
+
+@media screen and (min-width: 310px) and (max-width: 476px){
+  #contacto {
+    height: 55em;
+  }
+
+  #porMail p{
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }
 
     #pie-pagina{
       background-image: $color_gradiente;
       font-family: 'Quicksand', Ropa Sans, sans-serif;
-      font-size: 15px;
+      font-size: 20px;
       height: 110px;
       margin-top: 20px;
 
         a i {
-          color: black
+          color: black;
+          font-size: 25px;
         }
 
         p{
-          margin-top: 15px;
+          margin-top: 12px;
         }
     }
 
@@ -370,87 +563,27 @@ main {
       #pie-pagina {
         height: 150px; 
       }
-    
+      .pie-pagina__descripcion{
+        font-size: 20px;
+      }
+
     }
     
     @media screen and (min-width: 476px) and (max-width: 780px){
       #pie-pagina {
-        height: 150px; 
+        height: 250px; 
       }
-      
     }
 
-    #packs {
-      font-family: 'Quicksand', Ropa Sans, sans-serif;
-      font-size: 18px;
-      background-color: #F3F3F3;  
+    @media screen and (min-width: 310px) and (max-width: 476px){
+      #pie-pagina {
+        height: 400px;
+        font-size: 20px; 
+      }
+
+      .pie-pagina__descripcion{
+        font-size: 20px;
+      }
   }
-  
-  #conteinerPacks {
-      background-color:#f7cbe1;
-      width: 100%;
-      height: 200px;
-  }
-  
-  #conteinerPacks img {
-      width: 180px;
-      height: 170px;
-      margin-top: 25px;
-      margin-left: 45%;
-      align-items: center;
-  }
+
     
-  #packPadre {
-    height: 500px;
-  }
-  .packSPM {
-      width: 300px;
-      height: 300px;
-      border-radius: 25px;
-      margin-left: 50px;
-      margin-top: 60px;
-      transition-duration: 1s;
-  }
-  
-  
-  .packSPM:hover{
-      transform: scale(1.15, 1.15);
-      -webkit-box-shadow: -1px 1px 22px -1px rgb(116, 116, 116);
-      -moz-box-shadow: -1px 1px 22px -1px rgb(116, 116, 116);
-      box-shadow: -1px 1px 22px -1px rgb(116, 116, 116);
-  }
-
-  @media screen and (min-width: 1000px) and (max-width: 1400px){
-    #packPadre {
-      height: 500px; 
-      
-    }
-  }
-  
-  @media screen and (min-width: 780px) and (max-width: 1000px){
-    #packPadre {
-      height: 1100px; 
-    }
-
-    #conteinerPacks img {
-      width: 150px;
-      height: 140px;
-      margin-top: 25px;
-      margin-left: 29%;
-      align-items: center;
-  }
-
-  }
-  
-  @media screen and (min-width: 476px) and (max-width: 780px){
-    #packPadre {
-      height: 1100px; 
-    }
-    #conteinerPacks img {
-      width: 150px;
-      height: 140px;
-      margin-top: 25px;
-      margin-left: 25%;
-      align-items: center;
-  }
-  }
