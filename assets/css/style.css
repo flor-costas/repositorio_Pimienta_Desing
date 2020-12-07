@@ -88,30 +88,30 @@ li a:hover {
     height: 500px;
     width: 100%; }
   .portadaFlex {
-    width: 200px;
-    height: 130px;
+    width: 250px;
+    height: 150px;
     align-items: center;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 6px 1px #e0e0e0;
     -moz-box-shadow: 0px 0px 6px 1px #e0e0e0;
     box-shadow: 0px 0px 6px 1px #e0e0e0;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-left: 45px; }
   #textoPrincipal {
-    height: 30px;
+    height: 40px;
     font-family: 'Quicksand', sans-serif;
     color: #2454c4;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     margin: 0; }
     #textoPrincipal strong {
       font-family: 'Quicksand', Georgia, sans-serif;
-      font-size: 16px;
+      font-size: 20px;
       text-align: center;
       margin: 0; }
     #textoPrincipal .descripcion {
       text-align: center;
-      font-size: 16px;
+      font-size: 18px;
       color: #202020;
       margin: 0; } }
 
@@ -191,7 +191,7 @@ li a:hover {
   #servicios {
     height: 500px; }
   .verPacks {
-    margin-left: 240%; } }
+    margin-left: 230%; } }
 
 @media screen and (min-width: 780px) and (max-width: 1000px) {
   #servicios {
@@ -225,7 +225,8 @@ li a:hover {
 #clientes h1 {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-left: 30px; }
 
 #clientes #listaClientes {
   list-style: none;
