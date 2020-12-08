@@ -12,7 +12,7 @@ main {
   width: 100% !important;
   height: 100px;
   position: fixed;
-  margin: 0 !important; }
+  margin: 0; }
   #barraSuperior .logoFlex {
     width: 110px;
     height: 90px;
@@ -25,7 +25,8 @@ main {
   font-weight: bold;
   list-style: none;
   text-decoration: none;
-  margin-left: 30%; }
+  margin-left: 30%;
+  width: 100% !important; }
 
 li a {
   text-decoration: none;
@@ -34,17 +35,39 @@ li a {
 li a:hover {
   color: #d3167e !important; }
 
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  #barraSuperior {
+    width: 100%;
+    margin-left: -15px; } }
+
 @media screen and (min-width: 780px) and (max-width: 1000px) {
-  .navbar-toggler-icon {
-    margin-right: 90%; }
+  #barraSuperior {
+    width: 100%;
+    margin-left: -15px; }
+  #menu {
+    margin-left: 50%; }
   .logoFlex {
     width: 95px;
     height: 80px;
-    margin-top: 5px; } }
+    margin-top: -80px; } }
 
 @media screen and (min-width: 476px) and (max-width: 780px) {
-  .navbar-toggler-icon {
-    margin-right: 90%; }
+  #barraSuperior {
+    width: 100%;
+    margin-left: -15px; }
+  #menu {
+    margin-left: 50%; }
+  .logoFlex {
+    width: 95px;
+    height: 80px;
+    margin-top: -80%; } }
+
+@media screen and (min-width: 310px) and (max-width: 476px) {
+  #barraSuperior {
+    width: 100%;
+    margin-left: -20px; }
+  #menu {
+    margin-left: 50%; }
   .logoFlex {
     width: 95px;
     height: 80px;
@@ -78,6 +101,40 @@ li a:hover {
     text-align: center;
     font-size: 20px;
     color: #202020; }
+
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+  #nosotros {
+    height: 525px;
+    width: 100%; }
+  .portadaFlex {
+    width: 350px;
+    height: 210px;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 6px 1px #e0e0e0;
+    -moz-box-shadow: 0px 0px 6px 1px #e0e0e0;
+    box-shadow: 0px 0px 6px 1px #e0e0e0;
+    margin-top: 90px;
+    margin-left: 2px; }
+  #textoPrincipal {
+    height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: #2454c4;
+    font-size: 20px;
+    text-align: center;
+    margin: 0; }
+    #textoPrincipal strong {
+      font-family: 'Quicksand', Georgia, sans-serif;
+      font-size: 25px;
+      text-align: center;
+      margin-left: 75px;
+      margin-top: -40%; }
+    #textoPrincipal .descripcion {
+      text-align: center;
+      font-size: 20px;
+      color: #202020;
+      margin-left: 80px;
+      margin-top: -5%; } }
 
 @media screen and (min-width: 310px) and (max-width: 476px) {
   #nosotros {
