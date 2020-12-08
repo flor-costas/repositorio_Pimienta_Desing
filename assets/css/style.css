@@ -303,7 +303,9 @@ li a:hover {
   align-items: center; }
 
 #packPadre {
-  height: 500px; }
+  height: 500px;
+  position: relative;
+  margin: 0 auto; }
 
 .packSPM {
   width: 300px;
@@ -311,27 +313,81 @@ li a:hover {
   border-radius: 25px;
   margin-left: 50px;
   margin-top: 60px;
-  transition-duration: 1s; }
+  display: block;
+  transition: .5s ease; }
 
 .packSPM:hover {
-  transform: scale(1.15, 1.15);
   -webkit-box-shadow: -1px 1px 22px -1px #747474;
   -moz-box-shadow: -1px 1px 22px -1px #747474;
   box-shadow: -1px 1px 22px -1px #747474; }
 
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #d3167e;
+  border-radius: 25px;
+  margin-top: -39.5%;
+  margin-left: 52.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+  .overlay .textPacks {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    margin-top: 60%;
+    margin-left: 50%;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+
+#bloquePackUno:hover .overlay {
+  opacity: 1; }
+
+#bloquePackDos:hover .overlay {
+  opacity: 1; }
+
+#bloquePackTres:hover .overlay {
+  opacity: 1; }
+
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
   #packPadre {
-    height: 500px; } }
+    height: 500px; }
+  .overlay {
+    margin-top: -39%;
+    margin-left: 52%; }
+  .textPacks {
+    font-size: 18px; } }
 
 @media screen and (min-width: 780px) and (max-width: 1000px) {
   #packPadre {
-    height: 1100px; }
+    height: 1100px;
+    width: 100%; }
   #conteinerPacks img {
     width: 150px;
     height: 140px;
     margin-top: 25px;
-    margin-left: 29%;
-    align-items: center; } }
+    margin-left: 40%;
+    align-items: center; }
+  .packSPM {
+    width: 260px;
+    height: 260px;
+    margin-left: 10px;
+    padding: 15px; }
+  .overlay {
+    width: 230px;
+    height: 235px;
+    margin-top: -55%;
+    margin-left: 57%;
+    padding: 15px;
+    border-radius: 10px; }
+  .textPacks {
+    font-size: 15px;
+    width: 170px;
+    margin-top: 5px; } }
 
 @media screen and (min-width: 476px) and (max-width: 780px) {
   #packPadre {
@@ -341,7 +397,13 @@ li a:hover {
     height: 140px;
     margin-top: 25px;
     margin-left: 25%;
-    align-items: center; } }
+    align-items: center; }
+  .overlay {
+    margin-top: -31%;
+    margin-left: 42%; }
+  .textPacks {
+    font-size: 15px;
+    width: 150px; } }
 
 @media screen and (min-width: 310px) and (max-width: 476px) {
   #packPadre {
@@ -354,7 +416,15 @@ li a:hover {
     border-radius: 25px;
     margin-left: 20px;
     margin-top: 60px;
-    transition-duration: 1s; } }
+    transition-duration: 1s; }
+  .overlay {
+    width: 270px;
+    height: 270px;
+    margin-top: -41.5%;
+    margin-left: 49%; }
+  .textPacks {
+    font-size: 15px;
+    width: 150px; } }
 
 #contacto {
   background-color: #F3F3F3;
